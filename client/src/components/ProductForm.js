@@ -38,21 +38,21 @@ const ProductForm = (props) => {
     }
 
     return (
-        <form onSubmit={submitHandler} className="bg-primary p-4 m-auto d-flex flex-column align-items-center w-75 rounded">
-            <h4 className="text-warning">Add a product to the shop!</h4>
-            <div className="form-group p-2 text-center">
-                <label className="w-50" htmlFor="title">Title: </label>
-                <input className="w-100" type="text" name="title" onChange={changeHandler} />
+        <form onSubmit={submitHandler} className="bg-stone-700 shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-4">
+            <h4 className="text-amber-400 text-center font-bold text-lg">Add a product to the shop!</h4>
+            <div className="mb-4">
+                <label className="block text-amber-300 text-sm font-bold mb-2" htmlFor="title">Title</label>
+                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="title" onChange={changeHandler} />
             </div>
-            <div className="form-group p-2 text-center">
-                <label className="w-50" htmlFor="price">Price: </label>
-                <input className="w-100" type="number" name="price" onChange={changeHandler} />
+            <div className="mb-4">
+                <label className="block text-amber-300 text-sm font-bold mb-2" htmlFor="price">Price</label>
+                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" name="price" onChange={changeHandler} />
             </div>
-            <div className="form-group p-2 text-center">
-                <label className="w-50" htmlFor="description">Description: </label>
-                <textarea className="w-100" type="text" name="description" onChange={changeHandler} />
+            <div className="mb-4">
+                <label className="block text-amber-300 text-sm font-bold mb-2" htmlFor="description">Description</label>
+                <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="description" onChange={changeHandler} />
             </div>
-            <input type="submit" value="Add to Shop" />
+            <input type="submit" value="Add to Shop" className="bg-amber-400 text-stone-700 hover:bg-amber-500 cursor-pointer font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"/>
         </form>
     )
 
